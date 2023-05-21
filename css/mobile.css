@@ -1,0 +1,63 @@
+@media screen and (max-width: 768px) and (min-width: 500px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .nav-bar > * {
+    justify-content: start;
+    align-items: start;
+    border: none;
+  }
+
+  .nav-bar > .name-bar {
+    display: none;
+  }
+  #lylich .container .row {
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cti-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .cti-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    border-right: none;
+    border-bottom: 2px solid #dbc89d;
+  }
+  .cti-item:first-child {
+    border-right: none;
+  }
+
+  .cti-item:last-child {
+    grid-column: 1 / span 2;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+  }
+  .fix-side {
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+  }
+  .col > p {
+    width: 80%;
+    padding-left: 0 !important ;
+  }
+  .col span {
+    width: 20% !important;
+  }
+  .project-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

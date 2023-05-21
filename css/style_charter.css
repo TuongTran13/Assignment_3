@@ -1,0 +1,95 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.goal > h2 {
+  border-bottom: 1px solid black !important;
+  padding-bottom: 10px;
+}
+.color {
+  background-color: #f0f8ff;
+}
+.container-main {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.goal {
+  grid-column: 1 / span 2;
+}
+
+.time-line {
+  grid-column: 4;
+  grid-row: 1 / span 2;
+}
+
+.scopes {
+  grid-column: 1 / span 2;
+}
+
+/* Mobiles */
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .container-main {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .col-main {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .container-main {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .goal-text {
+    width: 100% !important;
+  }
+  .col-main {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  #time-line .icon-center {
+    justify-content: start;
+  }
+}
+/* Goal */
+
+.goal-item {
+  display: flex;
+}
+
+.col-main {
+  border-bottom: 1px solid #555;
+  padding-bottom: 10px;
+  gap: 30px;
+}
+
+.icon-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.text-main {
+  font-size: 12px;
+}
+.lead {
+  font-size: 16px;
+}
