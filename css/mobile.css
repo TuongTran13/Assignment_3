@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) and (min-width: 500px) {
+@media screen and (max-width: 768px) {
   .nav-bar {
     display: flex;
     flex-direction: column;
@@ -8,6 +8,10 @@
     justify-content: start;
     align-items: start;
     border: none;
+  }
+
+  .container {
+    /* width: 100%; */
   }
 
   .nav-bar > .name-bar {
